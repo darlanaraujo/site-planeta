@@ -1,0 +1,80 @@
+.container{
+    height: 100vh;
+    background-image: url('../img/fundo-mapa.png');
+    /* background-image: none; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: scroll;
+    display: flex;
+
+    /* position: relative; */
+
+}
+
+[data-container="esquerdo"]{
+    max-width: 430px;
+    display: none;
+    width: 0px;
+    opacity: 1;
+    transition: .5s;
+    
+
+}
+
+[data-container="esquerdo"].mostrar{
+    display: block;
+    width: 100%;
+    opacity: 1;
+    transition: .5s;
+    
+    
+}
+
+
+[data-container="meio"]{
+    
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+
+
+[data-container="direito"]{
+    max-width: 329px;
+    /* display: none; */
+
+}
+
+[data-container="direito"].mostrar{
+    display: block;
+    width: 100%;
+}
+
+
+/* ==================================================== */
+/* CSS BOX DOS MENUS - BARRA ESQUERDA */
+/* ==================================================== */
+
+[data-boxMenu="boxEsquerdo"]{
+    max-width: 500px;
+    height: 100vh;
+    background-color: white;
+    padding: 20px;
+    display: grid;
+    opacity: 0;
+    width: 0px;
+    transition: .5s;
+
+}
+
+[data-boxMenu="boxEsquerdo"].mostrar{
+    opacity: 1;
+    width: 100%;
+    transition: .5s;
+}
+
+
+
+

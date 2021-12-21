@@ -1,0 +1,135 @@
+[data-boxMenu="boxLocal"].mostrar{
+    display: grid;
+    max-width: calc(100% - 52px);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #001f23a8;
+    z-index: 999 !important;
+
+    opacity: 1;
+    transition: .5s;
+
+}
+
+[data-boxMenu="boxLocal"]{
+    display: none;
+    opacity: 0;
+    transition: .5s;
+}
+
+.containerBoxLocal{
+    display: grid;
+    grid-template-rows: 100px auto;
+    max-width: 430px;
+    width: 430px;
+    height: 100vh;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.barraSuperior{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 0px 20px 0px 20px;
+
+}
+
+
+.barraSuperior #titulo{
+    color: #001f23;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 1.07692;
+}
+
+.barraSuperior > div button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    color: #757575;
+    border-radius: 1000%;
+    transition: .5s;
+    font-size: inherit;
+}
+
+.barraSuperior > div button:hover{
+    background-color: rgba(221, 221, 221, 0.37);
+    transition: .5s;
+}
+
+.containerBoxLocal .corpo{
+    width: 100%;
+    overflow: scroll !important;
+    z-index: 4999;
+}
+
+
+
+.corpo .item{
+    display: flex;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: 1fr 40px; */
+    /* justify-content: center; */
+    text-align: left;
+    padding: 18px 20px 8px 20px;
+    border-bottom: solid 1px #738486;
+    cursor: pointer;
+}
+
+
+.corpo .item:hover{
+    background-color: #e4e4e454;
+}
+
+.corpo .item #titulo{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.75;
+}
+
+.corpo .item .box1-1, .box1-2{
+    display: flex;
+}
+
+.corpo .item #filtro, #data{
+    padding-right: 10px;
+    color: #001f23;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.corpo .item #numFiltro, #numData{
+    color: #001f23;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 19px;
+}
+
+
+.item .box2{
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 16px;
+    border-radius: 1000%;
+    transition: .5s;
+}
+
+.item .box2:hover{
+    background-color: rgba(221, 221, 221, 0.37);
+    transition: .5s;
+}
+
+.item .box2 i{
+    color: #757575;
+    font-size: 18px;
+}
+

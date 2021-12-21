@@ -1,0 +1,97 @@
+[data-boxMenu="boxRelatorio"].mostrar{
+    display: grid;
+    max-width: calc(100% - 52px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #001f23a8;
+    z-index: 999 !important;
+
+    opacity: 1;
+    transition: .5s;
+}
+
+[data-boxMenu="boxRelatorio"]{
+    opacity: 0;
+    /* width: 500px; */
+    transition: .5s;
+
+    display: none;
+    
+}
+
+.containerBoxRelatorio{
+    display: grid;
+    grid-template-rows: auto auto;
+    max-width: 430px;
+    width: 430px;
+    height: 100vh;
+    padding: 20px;
+    background-color: white;
+}
+
+.barraSuperior{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.barraSuperior #titulo{
+    color: #001f23;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 1.07692;
+}
+
+.barraSuperior > div button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    color: #757575;
+    border-radius: 1000%;
+    transition: .5s;
+    font-size: inherit;
+}
+
+.barraSuperior > div button:hover{
+    background-color: rgba(221, 221, 221, 0.37);
+    transition: .5s;
+}
+
+.corpo{
+    text-align: center;
+    justify-content: baseline;
+}
+
+.corpo > i{
+    font-size: 40px;
+    color: #4c6265;
+    margin-bottom: 45px;
+}
+
+.corpo > p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #4c6265;
+    margin-bottom: 45px;
+}
+
+.corpo > button{
+    background-color: #009db1;
+    color: white;
+    border: #009db1;
+    border-radius: 4px;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.corpo > button:hover{
+    background-color: #0b4850;
+    transition: .5s;
+}

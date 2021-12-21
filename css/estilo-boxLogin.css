@@ -1,0 +1,118 @@
+[data-boxMenu="login"].mostrar{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #001f23a8;
+    z-index: 10000000001 !important;
+ 
+    opacity: 1;
+    transition: .5s;
+}
+
+[data-boxMenu="login"]{
+    /* width: 100%; */
+    opacity: 0;
+    transition: .5s;
+    display: none;
+}
+
+.containerBoxLogin{
+    /* comando para posicionar ao centro */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    max-width: 535px;
+    max-height: calc(100% - 70px);
+    height: 535px;
+    overflow: scroll;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+
+    justify-content: center;
+
+    /* display: none; */
+    /* border: solid 1px red; */
+}
+
+.containerBoxLogin .box1{
+    padding: 16px 24px;
+    
+}
+
+.containerBoxLogin .box1 img{
+    margin-bottom: 20px;
+}
+
+.containerBoxLogin .box1 .titulo{
+    color: #001f23;
+    font-weight: 700;
+}
+
+.containerBoxLogin .box2{
+    padding: 8px 24px;
+    display: block;
+}
+
+.containerBoxLogin .box2 .input{
+    width: 100%;
+    height: 51px;
+    margin-top: 20px;
+    padding: 10px;
+    border: solid 1px #738486;
+    border-radius: 5px;
+}
+
+.containerBoxLogin .box2 a{
+    color: #001f23;
+    background-color: #f0f2f2;
+    text-decoration: underline #009db1;
+    font-size: 13px;
+    margin-left: 12px;
+}
+
+.containerBoxLogin .box3{
+    text-align: right;
+    padding-right: 24px;
+}
+
+.containerBoxLogin .box3 #btnLog-in{
+    padding: 15px 30px;
+    background-color: #009db1;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.containerBoxLogin .box3 #btnLog-in:hover{
+    background-color: #04616d;
+}
+
+.containerBoxLogin .box4{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.containerBoxLogin .box4 .texto{
+    color: #001f23;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.containerBoxLogin .box4 a{
+    color: #001f23;
+    background-color: #f0f2f2;
+    text-decoration: underline #009db1;
+    font-size: 13px;
+}

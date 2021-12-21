@@ -1,0 +1,138 @@
+.containerNav{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 70px;
+    margin-right: 14px;
+}
+
+.containerNav #nav1{
+    margin-bottom: 5px;
+    position: relative;
+    
+}
+
+/* .containerNav #nav1 #nav1-1{
+    
+    transform: scale(1 1);
+    transition: .3s;
+    opacity: 0;
+    display: none;
+} */
+
+
+[data-subMenu="menu1"].mostrar{
+    transform: scale(1, 1);
+    transition: .3s;
+    opacity: 1;
+}
+
+[data-subMenu="menu1"]{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    margin-right: 45px;
+
+    transform: scale(-1, 0);
+    transition: .3s;
+    opacity: 0;
+    /* display: none; */
+}
+
+[data-subMenu="menu2"].mostrar{
+    transform: scale(1, 1);
+    transition: .3s;
+    opacity: 1;
+}
+
+[data-subMenu="menu2"]{
+    position: absolute;
+    display: flex;
+    top: 45px;
+    right: 0;
+    margin-right: 45px;
+
+    transform: scale(-1, 0);
+    transition: .3s;
+    opacity: 0;
+    /* display: none; */
+}
+
+.containerNav #nav1 li{
+    background-color: white;
+    border-radius: 5px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+
+
+
+.containerNav #nav2{
+    background-color: white;
+    border-radius: 5px;
+    width: 40px;
+}
+
+.containerNav li{
+    /* position: relative; */
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    
+}
+
+.containerNav [aria-label]::after{
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+    z-index: 1000000000000 !important;
+    
+}
+
+#menu1, #menu2, #menu3{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.containerNav #menu2{
+    margin-bottom: 20px;
+}
+
+.containerNav li:hover{
+    background-color: rgb(206, 206, 206) !important;
+    border-radius: 5px;
+}
+
+.containerNav li i{
+    color: #3b4c4f;
+    font-size: 18px;
+   
+}
+
+.containerNav #globo{
+    margin: 0 auto;
+    cursor: default;
+    margin-bottom: 20px;
+    margin-left: -10px;
+}
+
+.containerNav #globo:hover{
+    background-color: transparent !important;
+}
+
+.containerNav #globo i{
+    
+    font-size: 50px;
+    
+    /* line-height: 0; */
+    /* width: 60px; */
+    /* height: 60px; */
+    background-color: transparent;
+    
+
+}

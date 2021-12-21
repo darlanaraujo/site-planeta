@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- Importação do CSS de Login -->
+    <link rel="stylesheet" href="css/estilo-boxLogin.css">
+
+    <!--Importação do CSS-->
+    <link rel="stylesheet" href="css/estilo-base.css">
+    <link rel="stylesheet" href="css/estilo-header.css">
+    <link rel="stylesheet" href="css/estilo-grid-layout.css">
+    <link rel="stylesheet" href="css/estilo-container.css">
+    <link rel="stylesheet" href="css/estilo-containerNav.css">
+    <link rel="stylesheet" href="css/estilo-footer.css">
+
+    <!--Importação do estilo dos box esquerdo -->
+    <link rel="stylesheet" href="css/estilo-boxPesquisa.css">
+    <link rel="stylesheet" href="css/estilo-boxLocal.css">
+    <link rel="stylesheet" href="css/estilo-boxMapa.css">
+    <link rel="stylesheet" href="css/estilo-boxRelatorio.css">
+    <link rel="stylesheet" href="css/estilo-boxSatelite.css">
+    <link rel="stylesheet" href="css/estilo-boxAjustes.css">
+    <!-- Importação do estilo dos box direito -->
+    <link rel="stylesheet" href="css/estilo-boxEdicao.css">
+    <link rel="stylesheet" href="css/estilo-boxSpectral.css">
+    <link rel="stylesheet" href="css/estilo-boxHistorico.css">
+
+    <!--Importação de imagens Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!--Importação do Favcon-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Importação JS -->
+    <script src="./js/script.js" defer></script>
+
+    <title>Planet Explorer</title>
+</head>
+<body>
+
+    <!-- BOX LOGIN -->
+    <div data-boxMenu="login" class="mostrar">
+
+        <div class="containerBoxLogin">
+
+            <div class="box1">
+                <figure><img src="./img/logo.png" alt=""></figure>
+                <h2 class="titulo">Faça login no Planet Explorer</h2>
+            </div>
+
+            <div class="box2">
+                <input class="input" type="email" name="" id="email" placeholder="Email" required="required">
+                <input class="input" type="password" name="" id="senha" placeholder="Senha" required="required">
+
+                <a href="">Esqueceu a senha?</a>
+            </div>
+
+            
+
+            <div class="box3">
+                <button class="btnLog-in" id="btnLog-in">Log in</button>
+            </div>
+
+            <div class="box4">
+                <p class="texto">Não tem uma conta Planet? <a href="">Inscrever-se</a> </p>
+            </div>
+        </div>
+
+    </div>
+
+    <header class="barraTopo">
+        
+        <section class="boxTopo1"></section>
+            
+            <section class="tituloTopo">
+                <img id="icon" src="img/icon.png" alt="">
+                <span id="barra">|</span>
+                <span id="nome">Explorer</span>
+            </section>
+            
+            
+            <nav>
+                <div class="menuTopo">
+                    <ul>
+                        <li class="btnMenu" id="btnAjuda"><a><i class="far fa-question-circle"></i></a>
+                            <ul data-menu="ajuda">
+                                <li><a href="">Central de ajuda</a></li>
+                                <li><a href="">O que há de novo</a></li>
+                                <li><a href="">Guia do usuário</a></li>
+                                <li><a href="">Faça um tour</a></li>
+                                <li><a href="">Guia de serviço</a></li>
+                                <li id="menu6"><a href="">Enviar feedback</a></li>
+                            </ul>    
+                        </li><span data-balao="menuTopo" id="balaoAjuda">Ajuda</span>
+                        
+                        <li class="btnMenu" id="btnApp"><a><i class="fas fa-th"></i></a>
+                            <ul data-menu="app">
+                                <li><i class="fas fa-history"></i><a href="">Planet Stories</a></li>
+                                <li><i class="far fa-map"></i><a href="">Visualizador de Mapas</a></li>
+                                <li><i class="fas fa-satellite-dish"></i><a href="">Painel de Tarefas</a></li>
+                                <li><i class="fas fa-code"></i><a href="">Centro de Desenv.</a></li>
+                            </ul>    
+                        </li><span data-balao="menuTopo" id="balaoApp">Aplicativos</span>
+
+                        <li class="btnMenu" id="btnLogin"><a><i class="fas fa-user"></i></a>
+                            <ul data-menu="login">
+                                <li><a href="">Minha Conta</a></li>
+                                <li><a href="">Log Out</a></li>
+                            </ul>    
+                        </li><span data-balao="menuTopo" id="balaoLogin">Login</span>
+                    </ul>
+                    <!-- <button class="btnMenu" id="btnAjuda"><i class="far fa-question-circle"></i></button> -->
+                    <!-- <span data-balao="menuTopo" id="balaoAjuda">Ajuda</span> -->
+                    
+
+                    <!-- <button class="btnMenu" id="btnApp"><i class="fas fa-th"></i></button> -->
+                    <!-- <span data-balao="menuTopo" id="balaoApp">Aplicativos</span> -->
+                    
+                    <!-- <button class="btnMenu" id="btnLogin"><i class="fas fa-user"></i></button> -->
+                    <!-- <span data-balao="menuTopo" id="balaoLogin">Login</span> -->
+                </div>
+            </nav>
+
+    </header>
+
+    <section>
+        
+    </section>
+
+    <section class="containerGrid">
+
+        <div class="barraEsquerda">
+
+            <section class="box1">
+                <nav>
+                    <div class="menuEsquerdo">
+                        <button class="btnMenu" id="btnBuscar"><i class="fas fa-search"></i></button>
+                        <span data-balao="menuEsquerdo" id="balaoBuscar">Pesquise e navegue no catalogo de imagens do Planet</span>
+
+                        <button class="btnMenu" id="btnLocal"><i class="fas fa-map-marker-alt"></i></button>
+                        <span data-balao="menuEsquerdo" id="balaoLocal">Acesse suas pesquisas salvas</span>
+
+                        <span><img src="img/linha.png" alt="" width="40px"></span>
+                        
+                        <button class="btnMenu" id="btnMapa"><i class="fas fa-map-marked-alt"></i></button>
+                        <span data-balao="menuEsquerdo" id="balaoMapa">Acesse seus dados hospedados para análise</span>
+
+                        <button class="btnMenu" id="btnRelatorio"><i class="far fa-file-alt"></i></button>
+                        <span data-balao="menuEsquerdo" id="balaoRelatorio">Ver ou baixar pedidos anteriores</span>
+
+                        <button class="btnMenu" id="btnSatelite"><i class="fas fa-satellite"></i></button>
+                        <span data-balao="menuEsquerdo" id="balaoSatelite">Crie uma imagem de alta resolução</span>
+
+                        
+
+                    </div>
+                    <div class="menuEsquerdo" id="menuSeparado">
+                        <span><img src="img/linha.png" alt="" width="40px"></span>
+        
+                        <button class="btnMenu" id="btnAjustes"><i class="fas fa-cog"></i></button>
+                        <span data-balao="menuEsquerdo" id="balaoAjustes">Ajuste suas configurações</span>
+                    </div>
+                </nav>
+            </section>
+
+        </div>
+
+        <!-- CONTAINER (FUNDO DO SITE) -->
+        <div class="container" id="container">
+
+            <section data-container="esquerdo">
+
+                <!--BOX PESQUISA-->
+                <div data-boxMenu="boxPesquisa">
+                    
+                    <div class="formPesquisa">
+                        <input type="text" placeholder="Pesquise um Local" id="inputPesquisa">
+
+                        <div>
+                            <button class="btnMenu" id="btnVoltar" aria-label="Minimizar"><i class="fas fa-chevron-left"></i></button>
+                            <!-- <span data-balao="menuEsquerdo" id="balaoVoltar">Minimizar</span> -->
+                        </div>
+                    </div>
+
+                    <div class="btnFiltros">
+
+                        <div id="botoes">
+                            <button id="btnDia" type="submit" aria-label="Imagem do dia">Dia</button>
+                            <button id="btnSemana" type="submit" aria-label="Imagem semanal">Semana</button>
+                            <button id="btnMes" type="submit" aria-label="Imagem mensal">Mês</button>
+                            <button id="btnTrimestral" type="submit" aria-label="Imagem trimestral">Trimestral</button>
+                        </div>
+
+                        <!-- <div data-boxPesquisa="mes">
+                            // AQUI TEM QUE SER FEITO UMA CAMADA PARA CADA BOTÃO DESSE BOX
+                        </div> -->
+                        
+                        <div id="selecao">
+                            <i class="fas fa-globe-americas"></i>
+                            <select name="filtro" id="filtro" title='Global Mensal'>
+                                <option value="Global Mensal" title="Global Mensal">Global Mensal</option>
+                                <option value="Análise Mensal" title="Análise Mensal">Análise Mensal</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="boxFiltro">
+
+                        <div class="item" id="item1">
+                            <div class="fotoMapa">
+                                <img id="foto" src="./img/img-map-box.png" alt="">
+                            </div>
+
+                            <div class="textoMapa">
+                                <h3 id="titulo">Novembro 2021</h3>
+                                <p id="texto" aria-label="Cópiar o nome do mapa base">global_monthly_2021_11_mosaic</p>
+                            </div>
+                        </div>
+
+                        <div class="item" id="item2">
+                            <div class="fotoMapa">
+                                <img id="foto" src="./img/img-map-box.png" alt="">
+                            </div>
+
+                            <div class="textoMapa">
+                                <h3 id="titulo">Novembro 2021</h3>
+                                <p id="texto" aria-label="Cópiar o nome do mapa base">global_monthly_2021_11_mosaic</p>
+                            </div>
+                        </div>
+
+                        <div class="item" id="item3">
+                            <div class="fotoMapa">
+                                <img id="foto" src="./img/img-map-box.png" alt="">
+                            </div>
+
+                            <div class="textoMapa">
+                                <h3 id="titulo">Novembro 2021</h3>
+                                <p id="texto" aria-label="Cópiar o nome do mapa base">global_monthly_2021_11_mosaic</p>
+                            </div>
+                        </div>
+
+                        <div class="item" id="item4">
+                            <div class="fotoMapa">
+                                <img id="foto" src="./img/img-map-box.png" alt="">
+                            </div>
+
+                            <div class="textoMapa">
+                                <h3 id="titulo">Novembro 2021</h3>
+                                <p id="texto" aria-label="Cópiar o nome do mapa base">global_monthly_2021_11_mosaic</p>
+                            </div>
+                        </div>
+
+                        <div class="item" id="item5">
+                            <div class="fotoMapa">
+                                <img id="foto" src="./img/img-map-box.png" alt="">
+                            </div>
+
+                            <div class="textoMapa">
+                                <h3 id="titulo">Novembro 2021</h3>
+                                <p id="texto" aria-label="Cópiar o nome do mapa base">global_monthly_2021_11_mosaic</p>
+                            </div>
+                        </div>
+
+                        <div class="item" id="item6">
+                            <div class="fotoMapa">
+                                <img id="foto" src="./img/img-map-box.png" alt="">
+                            </div>
+
+                            <div class="textoMapa">
+                                <h3 id="titulo">Novembro 2021</h3>
+                                <p id="texto" aria-label="Cópiar o nome do mapa base">global_monthly_2021_11_mosaic</p>
+                            </div>
+                        </div>
+
+                        <div class="item" id="item7">
+                            <div class="fotoMapa">
+                                <img id="foto" src="./img/img-map-box.png" alt="">
+                            </div>
+
+                            <div class="textoMapa">
+                                <h3 id="titulo">Novembro 2021</h3>
+                                <p id="texto" aria-label="Cópiar o nome do mapa base">global_monthly_2021_11_mosaic</p>
+                            </div>
+                        </div>
+
+                        <div class="item" id="item8">
+                            <div class="fotoMapa">
+                                <img id="foto" src="./img/img-map-box.png" alt="">
+                            </div>
+
+                            <div class="textoMapa">
+                                <h3 id="titulo">Novembro 2021</h3>
+                                <p id="texto" aria-label="Cópiar o nome do mapa base">global_monthly_2021_11_mosaic</p>
+                            </div>
+                        </div>
+
+                        <div class="item" id="item9">
+                            <div class="fotoMapa">
+                                <img id="foto" src="./img/img-map-box.png" alt="">
+                            </div>
+
+                            <div class="textoMapa">
+                                <h3 id="titulo">Novembro 2021</h3>
+                                <p id="texto" aria-label="Cópiar o nome do mapa base">global_monthly_2021_11_mosaic</p>
+                            </div>
+                        </div>
+
+                        <div class="item" id="item10">
+                            <div class="fotoMapa">
+                                <img id="foto" src="./img/img-map-box.png" alt="">
+                            </div>
+
+                            <div class="textoMapa">
+                                <h3 id="titulo">Novembro 2021</h3>
+                                <p id="texto" aria-label="Cópiar o nome do mapa base">global_monthly_2021_11_mosaic</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+
+                <!-- BOX LOCAL -->
+                <div data-boxMenu="boxLocal" id="boxLocal">
+
+                    <div class="containerBoxLocal">
+
+                        <div class="barraSuperior">
+                            <h2 id="titulo">Pesquisas Salvas</h2>
+                            <div>
+                                <button class="btnMenu" id="btnVoltar" aria-label="Minimizar"><i class="fas fa-chevron-left"></i></button>
+                                
+                            </div>
+                            
+                        </div>
+
+                        <div class="corpo">
+
+                            <!-- item -->
+                            <div class="item" id="item1">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item2">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item3">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item4">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item5">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item6">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item7">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item8">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item9">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item10">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item11">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item12">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item13">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item14">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item15">
+
+                                <div class="box1">
+                                    <h3 id="titulo">Porto Seguro, Bahia, Brasil</h3>
+                                    <div class="box1-1">
+                                        <p id="filtro">Filtro:</p>
+                                        <p id="numFiltro">2</p>
+                                    </div>
+                                    <div class="box1-2">
+                                        <p id="data">Datas:</p>
+                                        <p id="numData">20/01/2021 - 20/03/2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="box2">
+                                    <a id="btnDeletar" aria-label="Deletar"><i class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BOX MAPA -->
+                <div data-boxMenu="boxMapa" id="boxMapa">
+                    <div class="barraSuperior">
+                        <h2 id="titulo">Meus Dados Hospedados</h2>
+                        <div>
+                            <button class="btnMenu" id="btnVoltar" aria-label="Minimizar"><i class="fas fa-chevron-left"></i></button>
+                            <!-- <span data-balao="menuEsquerdo" id="balaoVoltar">Minimizar</span> -->
+                        </div>
+                        
+                    </div>
+
+                    <div class="subMenuMapa">
+                        <a id="btnMinhasPastas" role="tab" aria-selected="false">Minhas Pastas</a>
+                        <a id="btnDadosDemo" role="tab" aria-selected="true">Dados Demo</a>
+                    </div>
+
+                    <div class="corpo">
+
+                        <div data-corpoMapa="dadosDemo" class="mostrar" id="dadosDemo">
+
+                            <!-- item -->
+                            <div class="item" id="item1">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Monitoramento do porto</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item2">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Obstrução do campo de aviação</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item3">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Infestação de insetos na floresta</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item4">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Inundação do Rio Araguaia</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item5">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Controle de incêndios</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item6">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Impacto do clima nos campo</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item7">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Colapso da plataforma de gelo</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item8">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Monitoramento do Porto</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item9">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Monitoramento do Porto</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item10">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Monitoramento do Porto</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item11">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Monitoramento do Porto</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item12">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Monitoramento do Porto</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item13">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Monitoramento do Porto</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item14">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Monitoramento do Porto</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item15">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Monitoramento do Porto</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item16">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Monitoramento do Porto</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item17">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Monitoramento do Porto</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item18">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Monitoramento do Porto</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item19">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Monitoramento do Porto</p>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item" id="item20">
+                                <img src="./img/favicon-32x32.png">
+                                <p id="texto">Monitoramento do Porto</p>
+                            </div>
+                            
+                        </div>
+
+                        <div data-corpoMapa="minhasPastas" id="minhasPastas">
+
+                            <div>
+                                <!-- GAMBIARRA PARA PODER DAR UM ESPAÇO NO CONTEÚDO -->
+                            </div>
+
+                            <div>
+                                <i class="fas fa-map-marked-alt"></i>
+
+                                <p id="texto">É aqui que você pode encontrar seus dados hospedados. Entre em contato com o setor de vendas para adquirir um plano pago para que você possa solicitar dados hospedados.</p>
+                                
+                                <button class="botao" id="contato">Contato de Vendas</button>
+                            </div>
+
+                        </div>
+ 
+                    </div>
+                    
+                </div>
+
+
+                <!--BOX RELATÓRIO-->
+                <div data-boxMenu="boxRelatorio">
+
+                    <div class="containerBoxRelatorio">
+                        <div class="barraSuperior">
+                            <h2 id="titulo">Meus Pedidos</h2>
+                            <div>
+                                <button class="btnMenu" id="btnVoltar" aria-label="Minimizar"><i class="fas fa-chevron-left"></i></button>
+                                <!-- <span data-balao="menuEsquerdo" id="balaoVoltar">Minimizar</span> -->
+                            </div>
+
+                        </div>
+                        <div class="corpo">
+                            <i class="far fa-file-alt"></i>
+                            <p id="texto">Este é o resumo do seu pedido. Entre em contato com o departamento de vendas para adquirir um plano pago para que você possa solicitar e baixar os dados.</p>
+                            <button class="botao" id="contato">Contato de Vendas</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- BOX CONFIGURAÇÕES -->
+                <div data-boxMenu="boxAjustes" id="boxAjustes">
+
+                    <div class="containerBoxAjustes">
+                        <div class="barraSuperior">
+                            <h2 id="titulo">Ajustes</h2>
+                            <div>
+                                <button class="btnMenu" id="btnVoltar" aria-label="Minimizar"><i class="fas fa-chevron-left"></i></button>
+                                <!-- <span data-balao="menuEsquerdo" id="balaoVoltar">Minimizar</span> -->
+                            </div>
+
+                        </div>
+
+                        <div class="subMenuAjustes">
+
+                            <button id="btnDefinicoes" aria-checked="true"><i class="fas fa-cog"></i>Definições</button>
+
+                            <button id="btnMeuUso" aria-checked="false"><i class="fas fa-circle-notch"></i>Meu Uso</button>
+
+                            <button id="btnLabs" aria-checked="false"><i class="fas fa-flask"></i>Labs</button>
+
+                        </div>
+
+                        <div class="corpo">
+                            
+                            <div data-corpoAjustes="definicoes" class="mostrar" id="ajustesDefinicoes">
+
+                                <!-- item -->
+                                <div class="item" id="item1">
+
+                                    <div class="titulo">Sistema de Coordenadas</div>
+                                    <div class="boxItem">
+                                        <input type="radio" name="item1" class="radio" value="op1" checked>
+
+                                        <div class="texto">
+                                            <p>Graus decimais</p>
+                                            <span><p>37.77° N, 122.41° W</p></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="boxItem">
+                                        <input type="radio" name="item1" class="radio" value="op2">
+
+                                        <div class="texto">
+                                            <p>Graus / Minutos / Segundos</p>
+                                            <span><p>37° 46′ 24″ N 122° 24′ 40″ W</p></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- item -->
+                                <div class="item" id="item2">
+
+                                    <div class="titulo">Sistema de Medida</div>
+                                    <div class="boxItem">
+                                        <input type="radio" name="item2" class="radio" value="op1" checked>
+
+                                        <div class="texto">
+                                            <p>Métrica</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="boxItem">
+                                        <input type="radio" name="item2" class="radio" value="op2">
+
+                                        <div class="texto">
+                                            <p>Costumeiro nos Estados Unidos</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- item -->
+                                <div class="item" id="item3">
+
+                                    <div class="titulo">Unidades de Medida</div>
+
+                                    <span class="subTitulo">Distância</span>
+
+                                    <div class="boxItem">
+                                        <input type="radio" name="item3" class="radio" value="op1">
+
+                                        <div class="texto">
+                                            <p>Metros</p>
+                                            <span><p>1000 m</p></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="boxItem">
+                                        <input type="radio" name="item3" class="radio" value="op2" checked>
+
+                                        <div class="texto">
+                                            <p>Quilometros</p>
+                                            <span><p>1 km</p></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- segunda parte -->
+                                    <span class="subTitulo">Área</span>
+
+                                    <div class="boxItem">
+                                        <input type="radio" name="item3-1" class="radio" value="op1">
+
+                                        <div class="texto">
+                                            <p>Metros Quadrados</p>
+                                            <span><p>1000000 m²</p></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="boxItem">
+                                        <input type="radio" name="item3-1" class="radio" value="op2" checked>
+
+                                        <div class="texto">
+                                            <p>Quilometros Quadrados</p>
+                                            <span><p>1 km²</p></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="boxItem">
+                                        <input type="radio" name="item3-1" class="radio" value="op3">
+
+                                        <div class="texto">
+                                            <p>Hectares</p>
+                                            <span><p>100 ha</p></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div data-corpoAjustes="meuUso" id="ajustesMeuUso">
+
+                                <!-- item -->
+                                <div></div>
+
+                            </div>
+
+                            <div data-corpoAjustes="labs" id="ajustesLabs">
+
+                                <!-- item -->
+                                <div></div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                
+               
+            </section>
+
+            <section data-container="meio">
+
+                <!-- BOX LOGIN -->
+                <!-- <div data-boxMenu="login" class="mostrar">
+
+                    <div class="containerBoxLogin">
+                        <figure><img src="./img/logo.svg" alt=""></figure>
+                        <h2>Faça login no Planet Explorer</h2>
+
+                        <div>
+                            <input type="email" name="" id="">
+                            <input type="password" name="" id="">
+                        </div>
+
+                        <a href="">Forgot password?</a>
+
+                        <div>
+                            <button class="btnContato" id="btnContato">Contato de Vendas</button>
+                        </div>
+
+                        <p>Não tem uma conta Planet? <a href="">Inscrever-se</a> </p>
+                    </div>
+
+                </div> -->
+
+                <!-- BOX MEIO SATELITE --> 
+                <div data-boxMenu="satelite">
+
+                    <div class="containerBoxSatelite">
+                        <div class="linha1">
+                            <button class="btnMenu" id="btnFechar"><i class="fas fa-times"></i></button>
+                            <span data-balao="menuEsquerdo" id="balaoFechar">Fechar</span>
+                        </div>
+                        
+                        <div class="linha2">
+                            <h2 id="titulo">Faça uma imagem de alta resolução</h2>
+                            <p id="texto">Se imagens de alta resolução não estiverem disponíveis em sua área de interesse, elas podem ser obtidas para você por nossos satélites SkySat. Use o painel de tarefas para obter imagens de 50 cm quando e onde você precisar.</p>
+                            <p id="texto">Se você ainda não trabalhou com nossas imagens de 50 cm, baixe nossas amostras de imagens de alta resolução aqui ou entre em contato com o setor de vendas para adicionar acesso de tarefas ao seu contrato.</p>
+                        </div>
+                        
+                        <div class="linha3">
+                            <button class="btnContato" id="btnContato">Contato de Vendas</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BOX MEIO SPECTRAL -->
+                <div data-boxMenu="spectral">
+
+                    <div class="containerBoxSpectral">
+                        <div class="linha1">
+                            <button class="btnMenu" id="btnFechar"><i class="fas fa-times"></i></button>
+                            <span data-balao="menuEsquerdo" id="balaoFechar">Fechar</span>
+                        </div>
+                        
+                        <div class="linha2">
+                            <h2 id="titulo">Selecione um mapa base diferente</h2>
+                            <p id="texto">Clique em Exibir mapa base para mudar para Oregon Monthly Normalized Analytic.</p>
+                            
+                        </div>
+                        
+                        <div class="linha3">
+                            <button class="btnContato" id="btnContato">Contato de Vendas</button>
+
+                            <button class="btnIr" id="btnIr">Ver Mapa Base</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOX MEIO HOSTORICO -->
+                <div data-boxMenu="historico">
+
+                    <div class="containerBoxHistorico">
+                        <div class="linha1">
+                            <button class="btnMenu" id="btnFechar"><i class="fas fa-times"></i></button>
+                            <span data-balao="menuEsquerdo" id="balaoFechar">Fechar</span>
+                        </div>
+                        
+                        <div class="linha2">
+                            <h2 id="titulo">Faça um lapso de tempo em Histórias do planeta!</h2>
+                            <p id="texto">As histórias do planeta ajudarão a guiá-lo na criação de um lapso de tempo ou de uma história de comparação. Não se preocupe, manteremos seu lugar no mapa. Clique abaixo para continuar criando sua história!</p>
+                            
+                        </div>
+                        
+                        <div class="linha3">
+                            <button class="btnIr" id="btnIr">Leve-me às Histórias<i class="fas fa-external-link-alt"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MENU INTERNO DO CONTAINER -->
+                <section class="containerNav">
+                    <ul id="nav1">
+                        <li id="menu1"><a><i class="fas fa-draw-polygon"></i></a>
+                            <ul id="nav1-1" data-subMenu="menu1">
+                                <li id="menu1-6" aria-label="Importar arquivo para definir a área"><a><i class="fas fa-upload"></i></a></li>
+                                <li id="menu1-5" aria-label="Desenhe uma área circular restrita"><a><i class="far fa-circle"></i></a></li>
+                                <li id="menu1-4" aria-label="Desenhe uma área retangular restrita"><a><i class="far fa-square"></i></a></li>
+                                <li id="menu1-3" aria-label="Desenhe uma área personalizada"><a><i class="fas fa-draw-polygon"></i></a></li>
+                                <li id="menu1-2" aria-label="Desenhe uma área circular"><a><i class="fas fa-plus-circle"></i></a></li>
+                                <li id="menu1-1" aria-label="Desenhe uma área retangular"><a><i class="far fa-plus-square"></i></a></li>
+
+                            </ul>
+                        </li>
+                        <li id="menu2"><a><i class="fas fa-ruler-combined"></i></a>
+                            <ul id="nav1-2" data-subMenu="menu2">
+                                <li id="menu2-3" aria-label="Desenhe uma área personalizada"><a><i class="fas fa-draw-polygon"></i></a></li>
+                                <li id="menu2-2" aria-label="Desenhe uma área circular"><a><i class="fas fa-plus-circle"></i></a></li>
+                                <li id="menu2-1" aria-label="Desenhe uma área retangular"><a><i class="far fa-plus-square"></i></a></li>
+
+                            </ul>
+                        </li>
+                        <li id="menu3"><a><i class="fas fa-layer-group"></i></a></li>
+                    </ul>
+
+                    <ul id="nav2">
+                        <li id="menu4"><a><i class="fas fa-plus"></i></a></li>
+                        <li id="menu5"><a><i class="fas fa-minus"></i></a></li>
+                        <li id="globo"><img src="./img/globo.png" alt=""></li>
+                        <li id="menu6"><a><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                </section>
+
+                <footer>
+                    <div class="menuFooter">
+                        <div class="menuFooter1">
+                            <select name="filtro" id="filtro">
+                                <option value="Global Mensal">Global Mensal</option>
+                                <option value="Análise Mensal">Análise Mensal</option>
+                            </select>
+                        </div>
+
+                        <div class="menuFooter2">
+                            <i id="iconBack" class="fas fa-chevron-left"></i>
+                            <div id="linhaTempo">
+                                <a id="jan"><i class="fas fa-circle"></i><span>jan</span></a>
+                                <a id="fev"><i class="fas fa-circle"></i><span>fev</span></a>
+                                <a id="mar"><i class="fas fa-circle"></i><span>mar</span></a>
+                                <a id="abr"><i class="fas fa-circle"></i><span>abr</span></a>
+                                <a id="mai"><i class="fas fa-circle"></i><span>mai</span></a>
+                                <a id="jun"><i class="fas fa-circle"></i><span>jun</span></a>
+                                <a id="jul"><i class="fas fa-circle"></i><span>jul</span></a>
+                                <a id="ago"><i class="fas fa-circle"></i><span>ago</span></a>
+                                <a id="set"><i class="fas fa-circle"></i><span>set</span></a>
+                                <a id="out"><i class="fas fa-circle"></i><span>out</span></a>
+                                <a id="nov"><i class="fas fa-circle"></i><span>nov</span></a>
+                                <a id="dez"><i class="fas fa-circle"></i><span>dez</span></a>
+                            </div>
+                            <i id="iconNext" class="fas fa-chevron-right"></i>
+                        </div>
+
+                        <div class="menuFooter3">
+                            <select name="filtroPeriodo" id="filtroPeriodo">
+                                <option value="Trimestral">Trimestral</option>
+                                <option value="Mensal">Mensal</option>
+                                <option value="Semanal">Semanal</option>
+                                <option value="Diário">Diário</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="direitos">
+        
+                        <div class="box1">
+                            <div id="direitos">Mapbox © OpenStreetMap</div>
+                        </div>
+                        
+                        <div class="box2">
+                            <div id="coordenadas"><i class="fas fa-location-arrow"></i><span id="latitude">8.224499</span>° N/S, <span id="longitude">-1.078064°</span>° W/E</div>
+                            <div id="zoom"><i class="fas fa-search"></i>2.3</div>
+                            <div id="medida"><i class="fas fa-compress-arrows-alt"></i>31755.2 m/px</div>
+                            <div id="km">50000 km</div>
+                        </div>
+        
+                    </div>
+                </footer>
+
+            </section>
+
+            <section data-container="direito">
+
+                <!-- BOX EDIÇÃO -->
+                <div data-boxMenu="boxEdicao" id="boxEdicao">
+
+                    <div class="containerBoxEdicao">
+
+                        <div class="box1">
+                            <button class="btnMenu" id="btnVoltar" aria-label="Minimizar"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+
+                        <div class="box2">
+
+                            <button class="btnMenu" id="btnEdicaoOFF" aria-checked="true">
+                                <i class="far fa-image"></i>
+                                <h3 class="titulo">Aprimoramento OFF</h3>
+                                <input type="radio" name="opcao" id="op1" value="op1" checked>
+                            </button>
+
+                            <button class="btnMenu" id="btnEdicaoON" aria-checked="false">
+                                <i class="far fa-images"></i>
+                                <h3 class="titulo">Realçar</h3>
+                                <input type="radio" name="opcao" id="op2" value="op2">
+                            </button>
+                            
+                        </div>
+
+                        <div class="box3">
+
+                            <p class="subTitulo">Ajustar Imagem</p>
+
+                            <div class="item" id="item1">
+                                <p class="texto">Contraste</p>
+                                <input type="range" name="" id="" min="-100" max="100">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+
+                            <div class="item" id="item2">
+                                <p class="texto">Brilho</p>
+                                <input type="range" name="" id="" min="-100" max="100">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+
+                            <div class="item" id="item3">
+                                <p class="texto">Saturação</p>
+                                <input type="range" name="" id="" min="-100" max="100">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </section>
+
+
+        </div>
+
+        <div class="barraDireita">
+
+            <nav>
+                <div class="menuDireito">
+                    <button class="btnMenu" id="btnCompare"><i class="fas fa-random"></i></button>
+                    <span data-balao="menuDireito" id="balaoCompare">Compare imagens</span>
+
+                    <button class="btnMenu" id="btnEdicao"><i class="fas fa-magic"></i></button>
+                    <span data-balao="menuDireito" id="balaoEdicao">Aprimore as imagens</span>
+
+                    <button class="btnMenu" id="btnSpectral"><i class="far fa-images"></i></button>
+                    <span data-balao="menuDireito" id="balaoSpectral">Função não suportada por esse mapa</span>
+
+                    <button class="btnMenu" id="btnHistorico"><i class="fas fa-history"></i></button>
+                    <span data-balao="menuDireito" id="balaoHistorico">Histórico de tempo do planeta</span>
+                </div>
+            </nav>
+
+        </div>
+
+    </section>
+
+        
+</body>
+</html>

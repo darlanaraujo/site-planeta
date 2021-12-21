@@ -1,0 +1,33 @@
+.barraDireita{
+    /* position: fixed; */
+    background-color: #214145;
+    padding-top: 40px;
+    max-width: 52px;
+    height: 100vh;
+    display: block;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    
+    float: right;
+}
+
+.barraDireita .menuDireito{
+    padding-top: 15px;
+}
+
+.barraDireita button{
+    width: 38px;
+    height: 38px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+}
+
+.barraDireita button:hover{
+    background-color: rgb(255, 255, 255, 0.08);
+}

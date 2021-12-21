@@ -1,0 +1,157 @@
+/* CSS MENU FOOTER */
+footer{
+    height: 72px;
+    width: 100%;
+    /* width: 92.4%; */
+    position: absolute;
+    bottom: 0;
+    /* top: 60.205%; */
+}
+
+.menuFooter{
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 48px;
+    background-image: linear-gradient(to top, #042327, #04232700);
+    display: grid;
+    grid-template-columns: minmax(100px, 220px) 1fr minmax(100px, 200px);
+
+}
+
+.menuFooter .menuFooter1{
+    width: 100%;
+    text-align: center;
+
+}
+
+.menuFooter select{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menuFooter .menuFooter1 #filtro{
+    width: 90%;
+    height: 40px;
+    /* margin-left: 20px; */
+}
+
+
+
+.menuFooter .menuFooter2{
+    text-align: center;
+    width: 100%;
+
+}
+
+.menuFooter .menuFooter2{
+    /* width: 90%;
+    display: flex; */
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    width: 100%;
+}
+
+.menuFooter .menuFooter2 #iconBack, #iconNext{
+    color: white;
+    justify-content: center;
+    justify-items: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+#iconBack:hover, #iconNext:hover{
+    text-shadow: 1px 1px 10px black;
+}
+
+.menuFooter #linhaTempo{
+    background-color: white;
+    height: 2px;
+    /* justify-content: center; */
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-right: 10px;
+    
+}
+
+.menuFooter #linhaTempo a{
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.menuFooter #linhaTempo a span{
+    font-size: 12px;
+    margin-left: 5px;
+    
+}
+
+.menuFooter #linhaTempo i{
+    
+    position: absolute;
+    top: -7px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.menuFooter #linhaTempo i:hover{
+    border: solid 9px rgba(255, 255, 255, 0.651);
+    border-radius: 100%;
+    top: -18px;
+    right: 0;
+    left: 0;
+
+
+}
+
+
+
+.menuFooter .menuFooter3{
+    text-align: center;
+    width: 100%;
+
+}
+
+.menuFooter .menuFooter3 #filtroPeriodo{
+    width: 90%;
+    height: 40px;
+    /* margin-right: 33px; */
+}
+
+/* CSS DIREITOS */
+.direitos{
+    width: 100%;
+    height: 24px;
+    background-color: #042327;
+    color: white;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+}
+
+.direitos .box2{
+    display: flex;
+    float: left;
+}
+
+.direitos .box2 > div{
+    padding-left: 20px;
+}
+
+.direitos > div i{
+    padding-right: 8px;
+}
+
+.direitos #km{
+    padding-left: 120px;
+}

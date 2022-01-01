@@ -1,0 +1,148 @@
+.barraTopo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px 0 10px;
+    background-color: #002024;
+    color: white;
+    box-shadow: 1px 1px 10px black;
+    position: absolute;
+    z-index: 1000000000;
+}
+
+.tituloTopo{
+    width: 100%;
+    height: 40px;
+    padding: 5px 0 5px 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.09em;
+    line-height: 30px;
+    text-align: center;
+    
+}
+
+.tituloTopo #icon{
+    width: 20px;
+    vertical-align: text-bottom;
+    
+}
+
+.tituloTopo #barra{
+    font-size: 20px;
+    text-align: center;
+}
+
+.tituloTopo #nome{
+    vertical-align: top;
+}
+
+.menuTopo{
+    float: right;
+    padding: 5px 0px 5px 0px;
+    margin-right: 10px;
+}
+
+.menuTopo .btnMenu{
+    float: left;
+    width: 40px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.menuTopo .btnMenu:hover{
+    background-color: rgb(255, 255, 255, 0.08);
+}
+
+
+
+/* .menuTopo button{
+    width: 40px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.menuTopo button:hover{
+    background-color: rgb(255, 255, 255, 0.08);
+}
+
+.menuTopo button i{
+    width: 20px;
+    height: 20px;
+    font-size: 17px;
+    color: white;
+}  */
+
+/* MENU AJUDA */
+
+[data-menu="ajuda"]{
+    display: none;
+    margin-right: 70px;
+}
+
+[data-menu="app"]{
+    display: none;
+    margin-right: 30px;
+    width: 230px !important;
+}
+
+[data-menu="login"]{
+    display: none;
+    margin-right: -20px;
+    width: 130px !important;
+}
+
+[data-menu="ajuda"].mostrar, [data-menu="app"].mostrar, [data-menu="login"].mostrar{
+    display: block;
+    z-index: 99;
+}
+
+/* CSS GERAL DOS MENUS SUSPENSOS */
+
+[data-menu]{
+    /* display: none; */
+    /* display: block; */
+    background-color: #122f33;
+    border-radius: 5px;
+    padding: 6px 0px 6px 0px;
+    width: 160px;
+    right: 40px;
+    position: absolute !important;
+    text-align: left;
+    
+}
+
+[data-menu] li{
+    /* display: none; */
+    padding: 5px 20px 5px 20px;
+    background-color: #122f33;
+    height: 40px;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+[data-menu] #menu6{
+    border-top: solid 1px white;
+}
+
+[data-menu] li:hover{
+    background-color: #1f585f;
+}
+
+[data-menu] i{
+    color: white;
+    padding-right: 15px;
+    font-size: 16px;
+}

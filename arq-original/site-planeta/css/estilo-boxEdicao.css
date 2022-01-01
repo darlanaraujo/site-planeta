@@ -1,0 +1,152 @@
+[data-boxMenu="boxEdicao"].mostrar{
+    display: grid;
+    grid-template-rows: 90px 50px auto;
+    max-width: 329px;
+    height: 100%;
+    /* padding: 20px; */
+    border-left: solid 1px #4c6265;
+    background-color: #122f33;
+    color: white;
+    /* padding-top: 10px; */
+    
+    opacity: 1;
+    width: 329px;
+    transition: .5s;
+}
+
+[data-boxMenu="boxEdicao"]{
+    display: none;
+    opacity: 0;
+    transition: .5s;
+}
+
+#boxEdicao .containerBoxEdicao{
+    padding-top: 40px;
+    display: grid;
+}
+
+.containerBoxEdicao .box1{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+
+}
+
+.containerBoxEdicao .box1 #btnVoltar{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    color: white;
+    border-radius: 1000%;
+    transition: .5s;
+    font-size: inherit;
+}
+
+.containerBoxEdicao .box1 #btnVoltar:hover{
+    background-color: #ffffff2a;
+    transition: .5s;
+}
+
+.containerBoxEdicao .box1 > [aria-label="Minimizar"]::after{
+    background-color: #bcc5c6;
+    color: #122f33;
+    font-weight: 200;
+    left: 0;
+    right: 0;
+    margin-right: 200px;
+}
+
+
+.containerBoxEdicao .box2 > button{
+    display: grid;
+    grid-template-columns: 38px 1fr 38px;
+    width: 100%;
+    height: 63px;
+    line-height: 63px;
+    text-transform: uppercase;
+    font-size: 12px;
+
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    cursor: pointer;
+    border-bottom: solid 1px #4c6265;
+    /* justify-content: space-between; */
+}
+
+.containerBoxEdicao .box2 > button:hover{
+    background-color: #122f33;
+    transition: .5s;
+}
+
+.containerBoxEdicao .box2 > button i{
+    font-size: 24px;
+    padding-left: 15px;
+    /* width: 24px;
+    height: 24px; */
+    line-height: 63px;
+}
+
+.containerBoxEdicao .box2 > button .titulo{
+    padding-left: 30px;
+    text-align: left;
+}
+
+.containerBoxEdicao .box2 > button input{
+    width: 20px;
+}
+
+.containerBoxEdicao .box2 [aria-checked="true"]{
+    background-color: #025e6a;
+    transition: .5s;
+}
+
+.containerBoxEdicao .box2 [aria-checked="false"]{
+    background-color: #001f23;
+    transition: .5s;
+}
+
+.containerBoxEdicao .box3{
+    display: grid;
+}
+
+.containerBoxEdicao .box3 .subTitulo{
+    padding: 20px;
+    font-size: 14px;
+}
+
+.containerBoxEdicao .box3 .item{
+    display: grid;
+    grid-template-columns: 70px 1fr 40px;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.containerBoxEdicao .box3 .item .texto{
+    margin-right: 10px;
+    line-height: 40px;
+}
+
+.containerBoxEdicao .box3 .item i{
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 1000%;
+    width: 40px;
+    height: 40px;
+    transition: .5s;
+    font-size: inherit;
+    text-align: center;
+    line-height: 40px;
+}
+
+.containerBoxEdicao .box3 .item i:hover{
+    background-color: #ffffff2a;
+    
+}

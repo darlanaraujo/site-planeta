@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Importação do CSS-->
+    <link rel="stylesheet" href="css/estilo-base.css">
+    <link rel="stylesheet" href="css/estilo-header.css">
+    <link rel="stylesheet" href="css/estilo-barra-esquerda.css">
+    <link rel="stylesheet" href="css/estilo-barra-direita.css">
+    <link rel="stylesheet" href="css/estilo-mapa-fundo.css">
+    <link rel="stylesheet" href="css/estilo-menu-rodape.css">
+    <link rel="stylesheet" href="css/estilo-rodape.css">
+
+    <!--Importação do JS-->
+    <script src="./js/script.js" defer></script>
+
+    <!--Importação de imagens Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!--Importação do Favcon-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <title>Planet Explorer</title>
+</head>
+<body>
+
+    <section>
+        <div class="containerMapa">
+            <img src="./img/explorer-hero.jpg" alt="">
+        </div>
+    </section>
+
+    <header>
+        <div class="barraTopo">
+            <section class="boxTopo1"></section>
+            
+            <section class="boxTopo2">
+                <div class="tituloTopo">
+                    <img id="icon" src="img/icon.png" alt="">
+                    <span id="barra">|</span>
+                    <span id="nome">Explorer</span>
+                </div>
+                
+            </section>
+            
+            <section class="boxTopo3">
+                <nav>
+                    <div class="menuTopo">
+                        <button id="btnAjuda"><i class="far fa-question-circle"></i></button>
+                        <button id="btnAplicativos"><i class="fas fa-th"></i></button>
+                        <button id="btnUsuario"><i class="fas fa-user"></i></button>
+                    </div>
+                </nav>
+            </section>
+        </div>
+    </header>
+
+    <section>
+        <div class="barraEsquerda">
+            <section class="box1">
+                <nav>
+                    <div class="menuEsquerdoTopo">
+                        <button id="btnBuscar"><i class="fas fa-search"></i></button>
+                        <button id="btnLocal"><i class="fas fa-map-marker-alt"></i></button>
+                        <span><img src="img/linha.png" alt="" width="40px"></span>
+                        <button id="btnMapa"><i class="fas fa-map-marked-alt"></i></button>
+                        <button id="btnRelatorio"><i class="far fa-file-alt"></i></button>
+                        <button id="btnSatelite"><i class="fas fa-satellite"></i></button>
+                    </div>
+                </nav>
+            </section>
+            
+            <section class="box2">
+                <nav>
+                    <div class="menuEsquerdoBase">
+                        <span><img src="img/linha.png" alt="" width="40px"></span>
+                        <button><i class="fas fa-cog"></i></button>
+                    </div>
+                </nav>
+            </section>
+        </div>
+    </section>
+
+    <section>
+        <div class="barraDireita">
+
+            <nav>
+                <div class="menuDireito">
+                    <button id="btnCompare"><i class="fas fa-random"></i></button>
+                    <button id="btnEdicao"><i class="fas fa-magic"></i></button>
+                    <button id="btnSpectral"><i class="far fa-images"></i></button>
+                    <button id="btnHistorico"><i class="fas fa-history"></i></button>
+                </div>
+            </nav>
+
+        </div>
+    </section>
+
+    
+
+    <section>
+        <div class="menuRodape">
+            <section class="box1">
+                <div>Seleção</div>
+                <div>Linha do Tempo</div>
+                <div>Seleção</div>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="rodape">
+            
+            <section class="box1">
+                <div class="box1-1">
+                    <div id="direitos">Mapbox © OpenStreetMap</div>
+                </div>
+                
+                <div class="box1-2">
+                    <div id="coordenadas"><i class="fas fa-location-arrow"></i>8.224499° -1.078064°</div>
+                    <div id="zoom"><i class="fas fa-search"></i>2.3</div>
+                    <div id="medida"><i class="fas fa-compress-arrows-alt"></i>31755.2 m/px</div>
+                    <div id="km">50000 km</div>
+                </div>
+                
+            </section>
+        </div>
+    </footer>
+
+</body>
+</html>

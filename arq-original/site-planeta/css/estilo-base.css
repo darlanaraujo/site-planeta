@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    text-decoration: none;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+    color: black;
+}
+
+a{
+    color: white;
+}
+
+body{
+    /* width: 100vh; */
+    /* height: 500px; */
+    /* max-height: 100vh; */
+    background-color: #092f33;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('../fonts/Inter/inter-base.ttf');
+}
+
+/* CSS BALAO ARIAL LABEL */
+[aria-label] {
+    position: relative;
+}
+
+[aria-label]::after {
+    content: attr(aria-label);
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0px;
+    z-index: 90;
+    pointer-events: none;
+    padding: 3px 10px 3px 10px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 50;
+    color: #fff;
+    background-color: #001f23;
+    border-radius: 5px;
+    width: max-content;
+    height: min-content;
+    
+}
+    
+[aria-label]:hover::after {
+    display: block;
+    transition: .5s;
+}

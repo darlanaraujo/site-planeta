@@ -1,0 +1,12 @@
+.menuRodape{
+    display: flex;
+    
+}
+
+
+.menuRodape .box1{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to top, #042327, #04232700);
+    float: left;
+}

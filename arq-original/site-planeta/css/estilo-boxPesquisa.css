@@ -1,0 +1,214 @@
+[data-boxMenu="boxPesquisa"].mostrar{
+    display: grid;
+    grid-template-rows: 48px 105px auto;
+    max-width: 430px;
+    height: 100%;
+    /* padding: 20px; */
+    background-color: white;
+    padding-top: 60px;
+    
+    opacity: 1;
+    width: 430px;
+    transition: .5s;
+}
+
+[data-boxMenu="boxPesquisa"]{
+    display: none;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+
+/* CSS FORMULARIO DE PESQUISA */
+.formPesquisa{
+    /* margin-top: 60px; */
+    padding: 0px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    border-bottom: solid 1px #bdc5c6;
+    margin-bottom: 8px;
+}
+
+.formPesquisa #inputPesquisa{
+    width: 100%;
+    height: 32px;
+    border: none;
+    border-right: solid 1px #bdc5c6;
+    outline: none;
+    font-size: 18px;
+}
+
+.formPesquisa > div button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    color: #757575;
+    margin-left: 5px;
+    /* padding: 5px 10px 5px 10px; */
+    border-radius: 1000%;
+    transition: .5s;
+    font-size: inherit;
+
+}
+
+.formPesquisa > div button:hover{
+    background-color: rgba(221, 221, 221, 0.37);
+    transition: .5s;
+}
+
+/* CSS BTN FILTROS */
+.btnFiltros{
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+    height: 120px;
+}
+
+.btnFiltros #botoes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btnFiltros button{
+    padding: 5px 15px 5px 15px;
+    height: 36px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    font-size: inherit;
+    font-weight: 400;
+    background-color: white;
+    border: solid 1px #738486;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #4c6265;
+}
+
+.btnFiltros button:hover{
+    background-color: #eeeeee;
+    
+}
+
+.btnFiltros #btnTrimestral{
+    margin-right: 0;
+}
+
+.btnFiltros #selecao{
+    display: flex;
+    border: solid 1px #738486;
+    border-radius: 5px;
+    padding: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.btnFiltros #selecao i{
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 10px;
+    color: #001f23;
+}
+
+.btnFiltros select{
+    width: 100%;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+    color: #001f23;
+ 
+}
+
+.btnFiltros select option{
+    background-color: white;
+    font-size: 20px;
+    width: 100%;
+    
+    
+}
+
+/* CSS ITENS */
+.boxFiltro{
+    width: 100%;
+    /* height: 100vh; */
+    overflow: scroll;
+    background-color: white;
+    
+
+}
+
+.boxFiltro .item{
+    display: flex;
+    /* justify-content: center; */
+    /* justify-items: center; */
+    padding: 8px 20px 8px 20px;
+    border-top: solid 1px #bdc5c6;
+    border-bottom: solid 1px #bdc5c6;
+    cursor: pointer;
+}
+
+.boxFiltro .item:hover{
+    background-color: #f0f2f28f;
+}
+
+/* CSS ITEM 1 COMO SE FOSSE A SELEÇAO */
+
+.btnFiltros #btnMes{
+    background-color: #001f23;
+    color: white;
+}
+
+
+.boxFiltro #item1{
+    background-color: #e6f5f7;
+}
+
+.boxFiltro #item1 .fotoMapa{
+    border: solid 2px #009db1;
+}
+
+/* --------------------------------- */
+
+.boxFiltro .fotoMapa{
+    width: 136px;
+    height: 136px;
+    padding: 3px;
+    /* border: solid 2px #009db1; */
+    border: solid 2px #f0f2f2;
+    background-color: #f0f2f2;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.boxFiltro .fotoMapa #foto{
+    width: 128px;
+    cursor: pointer;
+    
+}
+
+.boxFiltro .textoMapa{
+    align-self: center;
+}
+
+.boxFiltro .item #titulo{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #001f23;
+    margin-bottom: 10px;
+}
+
+.boxFiltro .item #texto{
+    color: #112f33;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.boxFiltro .item #texto:hover{
+    background-color: #7384861e;
+    border-radius: 5px;
+    text-decoration: underline;
+    
+}
